@@ -1,0 +1,546 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 從這裡開始 */
+
+*,*:before,*:after{
+    box-sizing:border-box
+  }
+
+  .wrap{
+    font-family: "Noto Sans cJK TC",sans-serif;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  h2{
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #3b3b3b;
+  }
+
+  h3{
+    font-size: 24px;
+    line-height: 1.2;
+    color: #1e1e1e;
+  }
+
+  h4{
+    font-size: 20px;
+    color: #3B3B3B;
+  }
+
+  p{
+    font-size: 16px;
+    color: #919191;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+/* 桌機版  1920 */
+
+
+.header{
+    max-width: 1296px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.logo{
+    display: block;
+    background:url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg) no-repeat;
+    width: 90px;
+    height: 40px;
+    background-size: contain;
+    text-indent: 110%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 7px 7px 7.74px 7px;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 32px 0px;
+}
+
+.menu a{
+  color: #000000;
+  padding: 4px 8px;
+}
+
+
+
+.phone-btn-menu{
+  border:none;
+  background:none;
+  display: none;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+/* banner */
+
+.portfolio-bnbg{
+  padding: 80px;
+  background:#FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.portfolio-bn{
+  max-width: 670px;
+  padding: 59px 71px;
+  position: relative;
+
+  
+}
+
+.slogan-quote-topleft{
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slogan-quote-bottomright{
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.portfolio-bn {
+text-align: center;
+}
+
+.slogan {
+  padding-bottom: 16px;
+ 
+}
+.portfolio-bn span{
+  position: relative;
+  z-index: 0;
+}
+.slogan-mark1{
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 3px;
+  transform: translateX(-50%);
+}
+
+.slogan-mark2{
+  position: absolute;
+  z-index:-1;
+  left:50%;
+  bottom: 3px;
+  transform: translateX(-50%);
+}
+
+.portfolio-bnlist{
+  max-width: 636px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 24px;
+
+}
+
+.portfolio-bnlist li{
+  width: 298px;
+  text-align: center;
+
+}
+
+
+.portfolio-bnlist hr{
+border: 2px solid #C1C1C1;
+width: 24px;
+}
+
+.portfolio-bnlist-info{
+  padding-top: 8px;
+  color: #3B3B3B;
+}
+
+/* container */
+.portfoloio-container{
+  max-width: 1296px;
+  padding: 120px 12px;
+  gap: 72px;
+  margin: 0 auto;
+}
+
+.portfolio-cardgroup{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 24px;
+}
+
+.portfolio-card{
+  max-width: 636px;
+
+}
+.portfolio-picture{
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #F1F1F1;
+  margin-bottom: 16px;
+}
+
+.portfolio-picture img{
+  vertical-align: middle;
+}
+
+.portifolio-content{
+  padding:0px 16px;
+}
+.portifolio-content h2{
+  padding-bottom: 8px;
+}
+
+.portfolio-taggroup{
+  margin-top: 24px;
+  gap: 16px;
+  display: flex;
+}
+
+.portfolio-taggroup li{
+  background: #F1F1F1;
+  padding: 4px 12px;
+  border-radius: 16px;
+ 
+}
+
+.portfolio-taggroup a{
+  color: #3b3b3b;
+}
+.portfolio-pagination{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 72px;
+}
+.portfolio-pagination a{
+  font-size: 24px;
+  color:#3B3B3B;
+  padding: 2px 13px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.portfolio-pagination a:hover {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+
+  }
+
+/* footer表尾*/
+
+.footer-logo{
+  display: block;
+  background:url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg) no-repeat;
+  width: 90px;
+  height: 40px;
+  background-size: contain;
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.footer-bg{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  background-size: cover;
+  
+}
+.footer-container{
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info{
+  padding: 24px 0px;
+
+}
+
+.footer-email{
+  font-size: 20px;
+  line-height: 1.2;
+  color: #919191;
+}
+
+.footer-media{
+ display: flex;
+ flex-direction: column;
+ margin: 80px 0px;
+ gap: 24px;
+}
+
+.footer-media a{
+display: flex;
+align-items: center;
+background: #FFFFFF;
+color: #3B3B3B;
+border: 1px solid #C1C1C1;
+border-radius: 8px;
+padding:  8px 24px;
+gap: 8px;
+font-size: 20px;
+line-height: 1.5;
+
+}
+
+.footer-media .media-form{
+background: #000000;
+color: #FFFFFF;
+
+}
+
+.footer-media img{
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+
+/* 平板版  992 */
+@media(max-width:992px){
+
+}
+
+/* 手機版  767 */
+@media(max-width:767px){
+
+  h2{
+    font-size: 20px;
+  }
+  
+  h3{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+
+}
+
+.logo{
+  position: unset;
+  transform: translateY(0%);
+}
+.phone-btn-menu{
+  display: block;
+}
+.menu{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 56px;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 28px 0px;
+  margin: 0 auto;
+  border-top: 1px solid #F1F1F1;
+  z-index: 2;
+}
+
+.menu li{
+  padding: 12px 0px;
+}
+
+.mask-menu{ /* 遮罩 */
+  background-color: rgba(0,0,0,0.3);
+  width: 100%; 
+  height: 100%;
+  position: absolute; 
+  left: 0px;
+  top: 353px; 
+  z-index: 1;
+} 
+
+
+.close{
+  display: none;
+}
+
+
+/* banner*/
+
+.portfolio-bnbg{
+  padding: 40px 10%;
+  width: 100%;
+
+}
+
+.portfolio-bn{
+  position: relative;
+  padding: 0;
+  padding-top: 64px;
+}
+
+.slogan {
+  padding-bottom: 8px;
+ 
+}
+.slogan2{
+margin: 0px 5%;
+
+}
+
+
+.slogan-quote-topleft{
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.slogan-quote-bottomright{
+  display: none;
+}
+.portfolio-bnlist{
+  max-width: 235px;
+  width: 100%;
+  margin: 40px 0px;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.portfolio-bnlist li{
+  width: 100%;
+  text-align: center;
+  
+
+}
+
+
+/* container*/
+.portfoloio-container{
+  padding: 80px 12px;
+}
+
+.portfolio-cardgroup{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.portfolio-taggroup{
+  margin-top: 16px;
+  gap: 8px;
+}
+
+.footer-bg{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+  background-size: cover;
+  padding: 40px 34.5px;
+  
+}
+.footer-container{
+flex-direction: column;
+padding: 40px 0px;
+}
+
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-media{
+  margin:40px 0px 0px 0px;
+  width: 100%;
+ }
+ 
+ .footer-media a{
+ padding:  4px 24px;
+ 
+ }
+
+}
