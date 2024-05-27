@@ -236,7 +236,7 @@ width: 24px;
 /* container */
 .portfoloio-container{
   max-width: 1296px;
-  padding: 120px 12px;
+  padding: 120px 0px;
   gap: 72px;
   margin: 0 auto;
 }
